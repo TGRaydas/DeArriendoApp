@@ -1,0 +1,2 @@
+class NonUser < ApplicationRecord
+end

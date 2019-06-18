@@ -1,0 +1,312 @@
+// Place all the styles related to the admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-color: #337ab7;
+
+body{
+  margin: 0px !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $font-color;
+}
+
+li {
+  float: left;
+}
+
+li .active{
+  background-color: #204d74 !important;
+}
+
+li a {
+  cursor: pointer;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #204d74;
+}
+
+.go-home{
+  float: right !important;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: $font-color;
+  color: white;
+}
+
+.large-button{
+  cursor: pointer;
+  height: 25px;
+  width: 200px;
+  border: 1px solid;
+  padding: 2px;
+  border-radius: 2px;
+  color: white;
+}
+
+.button{
+  cursor: pointer;
+  height: 25px;
+  width: 30px;
+  border: 1px solid;
+  padding: 2px;
+  border-radius: 30%;
+  color: white;
+}
+
+.success{
+  background-color: #5bb75b;
+  border-color: #398439;
+}
+.button.success:hover{
+  background-color: #398439;
+}
+
+.large-button.success:hover{
+  background-color: #398439;
+}
+
+.modal-button.success:hover{
+  background-color: #398439;
+}
+
+
+#programs-append{
+  width: 50%;
+}
+
+.delete{
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.button.delete:hover{
+  background-color: #ac2925;
+}
+
+.update{
+  background-color: #337ab7;
+  border-color: #204d74;
+}
+
+.button.update:hover{
+  background-color: #204d74;
+}
+
+.modal-button.update:hover{
+  background-color: #204d74;
+}
+
+.warning{
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+.button.warning:hover{
+  background-color: #d58512;
+}
+
+.form-input{
+  width: 95%;
+  border-radius: 30px;
+}
+
+.program-ua-field{
+  padding: 20px;
+}
+
+
+.alert {
+  position: fixed;
+  width: 90%;
+  margin-left: 4.5%;
+  padding: 20px;
+  display: none;
+  background-color: #f44336; /* Red */
+  color: white;
+  z-index: 2;
+  margin-top: 5px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+.modal-modules-container{
+  display: none;
+  background-color: rgba(0,0,0,0.1);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+.modal-view-rendered{
+  padding-top: 20px;
+  height: 400px;
+  overflow-y: auto;
+  margin-left: 5%;
+  width: 90%;
+}
+.modal-modules{
+  position: relative;
+  border-radius: 20px;
+  background-color: white;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 80%;
+  height: 450px;
+}
+.modal-container{
+  display: none;
+  top: 0px;
+  background-color: rgba(0,0,0,0.1);
+  height: 100%;
+  width: 99%;
+  position: absolute;
+  z-index: 1;
+}
+.modal{
+  position: relative;
+  border-radius: 20px;
+  background-color: white;
+  margin-left: 35%;
+  margin-top: 1%;
+  width: 30%;
+}
+
+.close-modal{
+  float: right;margin-top: 10px;margin-right: 10px;cursor: pointer;
+}
+
+.modal-title{
+  padding-top: 15px;
+  padding-left: 10px;
+  border-bottom: 1px solid black;
+}
+
+.modal-button{
+  margin-left: 10px;
+  width: 90px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.modal-button i{
+  margin-left: 10px;
+}
+
+.modal-row{
+  padding-left: 20px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.modal-footer{
+  width: 99%;
+  padding: 10px 0px 10px 1%;
+  bottom: 10px;
+  border-top: 1px solid black;
+}
+.dropdown-table-data{
+  transition: max-height 0.2s ease-out;
+  display: none;
+  border-bottom: 2px solid grey;
+}
+
+.dropdown-table{
+  display: none;
+  transition: max-height 0.2s ease-out;
+}
+.dropdown-table th{
+  background-color: blue;
+}
+
+input#name{
+  width: 97%;
+}
+
+#program_approved_nameautocomplete-list{
+  position: fixed;
+  border: 1px solid #d4d4d4;
+  height: 200px;
+  border-bottom: none;
+  overflow-y: auto;
+  border-top: none;
+  z-index: 99;
+  width: 40%;
+  left: 0;
+  right: 0;
+}
+
+#programs-appendautocomplete-list {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  height: 200px;
+  border-bottom: none;
+  overflow-y: auto;
+  border-top: none;
+  z-index: 99;
+  width: 40%;
+  margin-left: 10%;
+  top: 12%;
+  left: 0;
+  right: 0;
+}
+
+.add-program-container{
+  height: 50px;
+  padding: 20px;
+}
+
+#filter-input{
+  width: 300px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
